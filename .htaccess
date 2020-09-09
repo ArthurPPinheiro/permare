@@ -1,0 +1,11 @@
+RewriteRule ^inicio/?$ index.php?page=inicio
+
+RewriteRule ^empresa/?$ index.php?page=empresa
+
+RewriteRule ^produtos/?$ index.php?page=produtos
+
+RewriteRule ^obras/?$ index.php?page=obras
+
+RewriteRule ^showroom/?$ index.php?page=showroom
+
+RewriteRule ^contatos/?$ index.php?page=contatos

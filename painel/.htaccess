@@ -1,0 +1,34 @@
+RewriteEngine on
+
+RewriteRule ^login/?$ login.php
+RewriteRule ^logout/?$ logout.php
+RewriteRule ^sair/?$ sair.php
+
+RewriteRule ^dashboard/?$ index.php?page=dashboard
+
+RewriteRule ^todo/?$ index.php?page=todo/list
+RewriteRule ^todo/add?$ index.php?page=todo/add
+RewriteRule ^todo/edit/([0-9]+)?$ index.php?page=todo/edit&task_id=$1
+RewriteRule ^todo/delete/(.+)?$ index.php?page=todo/delete&task_ids=$1
+
+RewriteRule ^portifolio/?$ index.php?page=portifolio/list
+RewriteRule ^portifolio/add?$ index.php?page=portifolio/add
+RewriteRule ^portifolio/edit/([0-9]+)?$ index.php?page=portifolio/edit&foto_id=$1
+RewriteRule ^portifolio/delete/(.+)?$ index.php?page=portifolio/delete&foto_ids=$1
+
+RewriteRule ^header/?$ index.php?page=header/list
+RewriteRule ^header/add?$ index.php?page=header/add
+RewriteRule ^header/edit/([0-9]+)?$ index.php?page=header/edit&header_id=$1
+RewriteRule ^header/delete/(.+)?$ index.php?page=header/delete&header_ids=$1
+
+RewriteRule ^projeto/?$ index.php?page=projeto/list
+RewriteRule ^projeto/add?$ index.php?page=projeto/add
+RewriteRule ^projeto/edit/([0-9]+)?$ index.php?page=projeto/edit&projeto_id=$1
+RewriteRule ^projeto/delete/(.+)?$ index.php?page=projeto/delete&projeto_ids=$1
+
+RewriteRule ^usuarios/?$ index.php?page=usuarios/list
+RewriteRule ^usuarios/add?$ index.php?page=usuarios/add
+RewriteRule ^usuarios/edit/([0-9]+)?$ index.php?page=usuarios/edit&usuario_id=$1
+RewriteRule ^usuarios/delete/(.+)?$ index.php?page=usuarios/delete&usuario_ids=$1
+
+RewriteRule ^configuracoes/?$ index.php?page=configuracoes
